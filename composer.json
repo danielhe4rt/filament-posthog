@@ -1,32 +1,34 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "danielhe4rt/filament-posthog",
+    "description": "Implement any type of PostHog Widget",
     "keywords": [
-        ":vendor_name",
+        "danielhe4rt",
         "laravel",
-        ":package_slug"
+        "filament-posthog"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/danielhe4rt/filament-posthog",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/danielhe4rt/filament-posthog/issues",
+        "source": "https://github.com/danielhe4rt/filament-posthog"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "danielhe4rt",
+            "email": "danielhe4rt@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1",
-        "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
+        "php": "^8.2",
+        "calebporzio/sushi": "^2.5",
+        "danielhe4rt/posthog": "dev-feat/1-trends-retention-query-builder",
         "filament/tables": "^3.0",
+        "filament/widgets": "^3.2",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.9",
         "nunomaduro/larastan": "^2.0.1",
@@ -36,18 +38,17 @@
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "phpstan/phpstan-phpunit": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "DanielHe4rt\\FilamentPosthog\\": "src/",
+            "DanielHe4rt\\FilamentPosthog\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "DanielHe4rt\\FilamentPosthog\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +68,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "DanielHe4rt\\FilamentPosthog\\FilamentPosthogServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentPosthog": "DanielHe4rt\\FilamentPosthog\\Facades\\FilamentPosthog"
             }
         }
     },
