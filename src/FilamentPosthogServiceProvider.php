@@ -2,6 +2,8 @@
 
 namespace DanielHe4rt\FilamentPosthog;
 
+use DanielHe4rt\FilamentPosthog\Commands\FilamentPosthogCommand;
+use DanielHe4rt\FilamentPosthog\Testing\TestsFilamentPosthog;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use DanielHe4rt\FilamentPosthog\Commands\FilamentPosthogCommand;
-use DanielHe4rt\FilamentPosthog\Testing\TestsFilamentPosthog;
 
 class FilamentPosthogServiceProvider extends PackageServiceProvider
 {
